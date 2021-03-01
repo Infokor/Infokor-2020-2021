@@ -7,6 +7,7 @@ Az x!=0 leellenorzi, hogy az olvasott szam az nem 0. Ha nem 0 akkor igazat terit
 Tehat a while(cin>>x && x!=0) {...} ciklus addig megy vegbe ameddig nem olvasunk egy 0-t a billentyurol.
 Ezt a technikat tanuljatok meg mert verseny feladatoknal is hasznaljak.
 (lasd: https://stackoverflow.com/a/6791545)
+Lásd: https://www.cplusplus.com/forum/beginner/91641/
 
 
 Egy masik megoldas, ami Peter otlete, az az hogy do-while ciklussal vizsgaljuk a beolvasott elemeket. Viszont fontos, hogy ebben az esetben a cikluson belul megegyszer meg kell vizsgaljuk
