@@ -1,11 +1,12 @@
 /**
 Nincs megadva, hogy hany szamot olvasunk be. Addig olvasunk be ameddig 0-t kapunk.
 
-Az if(cin >> x) teljesul akkor, ha sikeres a beolvasas a billentyurol. (Tehat a mi esetunkben mondhatjuk azt hogy mindig igazat terit vissza).
+Az if(cin >> x) teljesul akkor, ha sikeres a beolvasas a billentyurol. (Tehat a mi esetunkben akkor nem sikeres ha betut olvasunk szam helyett).
 Az x!=0 leellenorzi, hogy az olvasott szam az nem 0. Ha nem 0 akkor igazat terit vissza, klonben hamisat.
 
 Tehat a while(cin>>x && x!=0) {...} ciklus addig megy vegbe ameddig nem olvasunk egy 0-t a billentyurol.
 Ezt a technikat tanuljatok meg mert verseny feladatoknal is hasznaljak.
+(lasd: https://stackoverflow.com/a/6791545)
 
 
 Egy masik megoldas, ami Peter otlete, az az hogy do-while ciklussal vizsgaljuk a beolvasott elemeket. Viszont fontos, hogy ebben az esetben a cikluson belul megegyszer meg kell vizsgaljuk
