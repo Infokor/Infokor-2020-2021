@@ -1,0 +1,75 @@
+/* https://www.w3schools.com/css/default.asp */
+
+* {
+    font-family: 'Roboto';
+}
+
+p {
+    color: blue;
+}
+
+/* p#zold-szoveg {
+    color: green;
+} */
+
+/* Ne Igy designoljatok:
+    - az osztaly neve nem tukrozi a funkcionalitast
+*/
+#zold-szoveg {
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+    /* tartalom koruli ures szegely */
+    padding: 2em;
+    /* tag koruli ures szegely */
+    margin: 3em;
+    cursor: pointer;
+}
+
+/* p.piros-keret {
+    border: solid red 2px;
+} */
+
+/* Igy designoljatok:
+    - osztalyt hasznalsz => altalanos
+    - az osztaly neve tukrozze a funkcionalitast
+*/
+.piros-keret {
+    border: solid red 2px;
+}
+
+h1 {
+    border: solid orange 5px;
+}
+
+.nagy-szoveg-tarolo p {
+    font-size: large;
+    color: green;
+}
+
+a:hover {
+    color: hotpink;
+}
+
+
+
+/*
+<tag>#<id> {
+
+}
+
+<tag>.<class> {
+    
+}
+
+#<id> {
+
+}
+
+.<class> {
+    
+}
+
+<szulo-selector> <leszarmazott-selector> {
+
+}
+*/
