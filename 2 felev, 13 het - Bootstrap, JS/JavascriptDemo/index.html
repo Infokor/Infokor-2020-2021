@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="my_alerts.js"></script>
+    <script src="click_counter.js"></script>
+</head>
+<body onLoad="myAlertFunction('loading')">
+    <button onClick="myAlertFunction('Bori')">Button</button>
+
+    <button onClick="myAlertFunction(15)">Button2</button>
+
+    <button onClick="onButtonClick()">Count clicks</button>
+
+    <p>No. clicks so far:</p>
+    <p id="noClicksPara"></p>
+
+    <!-- <script>
+        function myAlertFunction(nev) {
+            window.alert('Hello, ' + nev)
+        }
+    </script> -->
+</body>
+</html>
