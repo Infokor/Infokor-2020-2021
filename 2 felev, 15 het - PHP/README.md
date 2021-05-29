@@ -22,7 +22,7 @@ A `festival.sql` file a `festival` adatbázis adattábláit létrehozó script.
 
 **buy.php**
 - verify and get POST parameters
-    - in case of error redirect to `login.php` with the error parameter set
+    - in case of error redirect to `jegyek.php` with the error parameter set
 - instantiate model
 - set model attributes
 - instantiate PurchaseDao
