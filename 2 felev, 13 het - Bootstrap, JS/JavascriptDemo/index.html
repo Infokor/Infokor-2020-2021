@@ -7,21 +7,62 @@
     <title>Document</title>
     <script src="my_alerts.js"></script>
     <script src="click_counter.js"></script>
+    <script src="semaphore.js"></script>
+    <script src="calculator.js"></script>
+    <script src="slideshow.js"></script>
+    <link rel="stylesheet" href="stylesheets.css">
 </head>
-<body onLoad="myAlertFunction('loading')">
-    <button onClick="myAlertFunction('Bori')">Button</button>
+<body> 
+    <!-- onLoad="myAlertFunction('loading')" -->
+    <div>
+        <h1>Alerts</h1>
+        <button onClick="myAlertFunction('Bori')">Button</button>
+        <button onClick="myAlertFunction2(15)">Button2</button>
+    </div>
 
-    <button onClick="myAlertFunction(15)">Button2</button>
+    <div>
+        <h1>Counting Clicks</h1>
+        <button onClick="onButtonClick()">Count clicks</button>
+        <p>No. clicks so far:</p>
+        <p id="noClicksPara"></p>
+    </div>
 
-    <button onClick="onButtonClick()">Count clicks</button>
+    <div>
+        <h1>Traffic Light Control</h1>
+        <button onClick="onSemaphoreChange()">Semaphore</button>
+        <div id="semaphoreDiv" style="background-color: blue;"></div>
+    </div>
 
-    <p>No. clicks so far:</p>
-    <p id="noClicksPara"></p>
+    <div>
+        <h1>Calculator</h1>
+        <form>
+            <label for="aNumber">Number A:</label>
+            <input type="number" id="aNumberInput" name="aNumber"><br>
+            <label for="bNumber">Number B:</label>
+            <input type="number" id="bNumberInput" name="bNumber"><br>
+            <button type="button" onClick="calculateSum()">Compute Sum</button><br>
+            <label for="sum">Sum:</label>
+            <input readonly type="number" id="sumInput" name="sum"><br>
+        </form>
+    </div>
 
-    <!-- <script>
-        function myAlertFunction(nev) {
-            window.alert('Hello, ' + nev)
+    <br>
+    <br>
+
+    <div>
+        <h1>Slideshow</h1>
+        <button onClick="slideShowBalra()">Balra</button>
+        <button onClick="slideShowJobbra()">Jobbra</button>
+        <br>
+        <img id="imgContainer" height=400 src="img/flower1.jpg"></img>
+    </div>
+
+    <script>
+        // a scripteket betehetjuk a html fileba is, de inkabb kulon taroljuk oket,
+        // az atlathatosag miatt
+        function myAlertFunction2(nev) {
+            window.alert('Testing, ' + nev)
         }
-    </script> -->
+    </script>
 </body>
 </html>
